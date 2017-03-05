@@ -20,10 +20,13 @@
             text-align: center;
             top: 50%;
             left: 30%;
-            @include fadeIn( 2s );
+            @include fadeIn( 0.5s );
+            h1 {
+                font-size: 45px;
+            }
         }
         .circle {
-            @include fadeIn( 3s );
+            @include fadeIn( 1s );
             display: flex;
             align-content: center;
             align-items: center;
@@ -32,14 +35,14 @@
             margin-top: 15%;
             border-radius: 50%;
             background-color: gold;
-            height: 75px;
-            width: 75px;
+            height: 100px;
+            width: 100px;
 
             i {
                 color: white;
             }
             :hover {
-                color: darken(gold, 5%);
+                color: black;
             }
         }
     }
