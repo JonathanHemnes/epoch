@@ -1,5 +1,4 @@
 @import "mixins";
-
 .business-card {
     background: black;
     height: 100vh;
@@ -20,13 +19,22 @@
             text-align: center;
             top: 50%;
             left: 30%;
-            @include fadeIn( 0.5s );
+            background: url(../img/gold_3.jpg) no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 2em;
+            /* -webkit-background-clip clips the background of the element to the text */
+            -webkit-text-fill-color: transparent;
+            /* overrides the white text color in webkit browsers */
+            -webkit-background-clip: text;
+            @include fadeIn( 0.5s);
             h1 {
                 font-size: 45px;
             }
         }
         .circle {
-            @include fadeIn( 1s );
+            @include fadeIn( 1s);
             display: flex;
             align-content: center;
             align-items: center;
@@ -34,14 +42,13 @@
             margin: auto;
             margin-top: 15%;
             border-radius: 50%;
-            background-color: gold;
+            background-color: #E5C100;
             height: 100px;
             width: 100px;
-
             i {
                 color: white;
             }
-            :hover {
+             :hover {
                 color: black;
             }
         }
