@@ -1,6 +1,8 @@
 @import "mixins";
+@import "variables";
+
 .business-card {
-    background: black;
+    background: white;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -14,24 +16,15 @@
         color: $text-white;
     }
     .logo-space {
-        .name {
-            transition: background-color 2s ease-in;
-            text-align: center;
-            top: 50%;
-            left: 30%;
-            background: url(../img/gold_3.jpg) no-repeat center center;
-            background-size: cover;
-            color: #fff;
-            text-align: center;
-            padding: 2em;
-            /* -webkit-background-clip clips the background of the element to the text */
-            -webkit-text-fill-color: transparent;
-            /* overrides the white text color in webkit browsers */
-            -webkit-background-clip: text;
-            @include fadeIn( 0.5s);
-            h1 {
-                font-size: 45px;
+        img {
+            @include fadeIn( 0.75s);
+            @media screen and (min-width: $screen-xs) and (max-width: $screen-sm) {
+                width: 100%;
+                max-width: 300px;
             }
+            width: 60%;
+            display: block;
+            margin: auto;
         }
         .circle {
             @include fadeIn( 1s);
@@ -40,16 +33,16 @@
             align-items: center;
             justify-content: center;
             margin: auto;
-            margin-top: 10%;
+            margin-top: 5%;
             border-radius: 50%;
-            background-color: #E5C100;
+            background-color: black;
             height: 100px;
             width: 100px;
             i {
                 color: white;
             }
              :hover {
-                color: black;
+                color: #E5C100;
             }
         }
     }
