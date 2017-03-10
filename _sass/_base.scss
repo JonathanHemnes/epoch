@@ -20,7 +20,7 @@
             @include fadeIn( 0.75s);
             @media screen and (min-width: $screen-xs) and (max-width: $screen-sm) {
                 width: 100%;
-                max-width: 300px;
+                max-width: 350px;
             }
             width: 60%;
             display: block;
@@ -33,11 +33,11 @@
             align-items: center;
             justify-content: center;
             margin: auto;
-            margin-top: 5%;
+            margin-top: 15%;
             border-radius: 50%;
             background-color: black;
-            height: 100px;
-            width: 100px;
+            height: 75px;
+            width: 75px;
             i {
                 color: white;
             }
